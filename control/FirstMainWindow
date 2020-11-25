@@ -1,0 +1,25 @@
+import sys
+from PyQt5.QtWidgets import QMainWindow, QApplication,QDesktopWidget
+from PyQt5.QtGui import QIcon
+
+
+class FirstMainwin(QMainWindow):
+    def __init__(self):
+        super(FirstMainwin, self).__init__()
+        self.setWindowTitle("第一个窗口")
+        self.resize(300, 200)
+        self.status = self.statusBar()
+        self.status.showMessage("5秒钟的显示",5000)
+    def center(self):
+        screem=QDesktopWidget.screenGeometry()
+        size=self.geometry()
+        newleft=(screem.width()-size.width())/2
+        newtop=(screem.height()-size.height())/2
+        self.move(newleft,newtop)
+
+if __name__=="__main__":
+    app=QApplication(sys.argv)
+    app.setWindowIcon(QIcon('./images/Dragon.ico'))
+    main=FirstMainwin()
+    main.show()
+    sys.exit(app.exec_())

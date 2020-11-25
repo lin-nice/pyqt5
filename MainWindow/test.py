@@ -103,7 +103,7 @@ class Ui_MainWindow(object):
         self.pushButton_10.setText(_translate("MainWindow", "PushButton"))
         self.label.setText(_translate("MainWindow", "TextLabel"))
         self.label_2.setText(_translate("MainWindow", "TextLabel(&A)"))
-        self.label_3.setText(_translate("MainWindow", "TextLabel(B)"))
+        self.label_3.setText(_translate("MainWindow", "TextLabel(&B)"))
         self.pushButton_12.setText(_translate("MainWindow", "PushButton"))
         self.pushButton_13.setText(_translate("MainWindow", "PushButton"))
         self.menufile.setTitle(_translate("MainWindow", "file"))
